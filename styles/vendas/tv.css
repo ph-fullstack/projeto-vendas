@@ -109,6 +109,7 @@ nav li:not(:last-child)::after {
 
 .pagamento {
     padding: 10px;
+    text-align: center;
 }
 
 .pagamento h2 {
@@ -129,13 +130,13 @@ nav li:not(:last-child)::after {
 }
 
 .enviar {
-    width: 66%;
+    width: 200px;
     background-color: var(--azul);
     color: #fff;
 }
 
 .limpar {
-    width: 33%;
+    width: 80px;
     background-color: #fff;
 }
 
@@ -156,7 +157,7 @@ nav li:not(:last-child)::after {
 
 .detalhes table {
     height: 350px;
-    width: 400px;
+    width: 350px;
     margin-top: 10px;
 }
 
