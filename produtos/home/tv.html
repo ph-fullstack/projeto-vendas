@@ -23,135 +23,124 @@
 
             <ul class="breadchumb">
 
-                <a href="../../index.html">
-                    <li>Home</li>
-                </a>
+                <li><a href="../../index.html">Home</a></li>
 
-                <a href="../../index.html">
-                    <li>Tecnologia</li>
-                </a>
+                <li><a href="../../index.html">Tecnologia</a></li>
 
-                    <li>TV</li>
+                <li>TV</li>
 
             </ul>
 
         </nav>
 
-        <article>
+        <section class="produto">
 
-            <section class="img">
+            <img src="../../images/smart-tv.png" alt="Smart TV">
 
-                <img src="../../images/smart-tv.png" alt="Smart TV" class="tv">
+            <h2>Smart TV 40" LED Full HD - WiFi Bluetooth e HDR</h2>
 
-            </section>
+            <span>Por R$ 1.599,00</span>
 
-            <section class="produto">
+        </section>
 
-                <h2>Smart TV 40" LED Full HD - WiFi Bluetooth e HDR</h2>
+        <section class="pagamento">
 
-                <span class="valor">R$ 1.599,00</span>
+            <h2>Pagamento</h2>
+            
+            <form action="#" method="post" onsubmit="msg()">
 
-            </section>
+                <p>
+                    <label for="nome">
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo*" class="dados" autocomplete="name" required>
+                    </label>
+                </p>
 
-            <section class="pagamento">
+                <p>
+                    <label for="cpf">
+                        <input type="number" name="cpf" id="cpf" placeholder="CPF* (Somente números)" class="dados" maxlength="11" required>
+                    </label>
+                </p>
 
-                <h2>Pagamento</h2>
-                
-                <form action="#" method="post">
+                <p>
+                    <label for="cartao">
+                        <input type="number" name="cartao" id="cartao" placeholder="N° do Cartão de Crédito* (Somente números)" class="dados" required>
+                    </label>
+                </p>
 
-                    <p>
-                        <label for="nome">
-                            <input type="text" name="nome" id="nome" placeholder="Nome Completo*" autocomplete="name" required>
-                        </label>
-                    </p>
-                        <label for="cpf">
-                            <input type="number" name="cpf" id="cpf" placeholder="CPF* (Somente números)" maxlength="11" required>
-                        </label>
-                    <p>
+                <p>
+                    <label for="email">
+                        <input type="text" name="email" id="email" placeholder="E-mail*" class="dados" required>
+                    </label>
+                </p>
 
-                    </p>
-                        <label for="cartao">
-                            <input type="number" name="cartao" id="cartao" placeholder="N° do Cartão de Crédito* (Somente números)" required>
-                        </label>
-                    <p>
+                <p>
+                    <input type="submit" value="Confirmar Compra" class="enviar">
+                    <input type="reset" value="Limpar" class="limpar">
+                    <script>
+                        function msg(){
+                            alert("Pedido confirmado! Aguarde o envio de validação dos dados no seu email")
+                        }
+                    </script>
+                </p>
 
-                    </p>
+            </form>
 
-                    <p>
-                        <label for="email">
-                            <input type="text" name="email" id="email" placeholder="E-mail*" required>
-                        </label>
-                    </p>
+        </section>
 
-                    <p>
-                        <input type="reset" value="Limpar">
-                        <input type="submit" value="Confirmar Compra">
-                    </p>
+        <section class="detalhes">
 
-                    <div>
-                        <p>Pedido confirmado! Aguarde o envio de validação dos dados no seu email</p>
-                    </div>
+            <h2>Descrição do Produto</h2>
 
-                </form>
+            <table>
 
-            </section>
+                <tbody>
 
-            <section class="detalhes">
+                    <tr>
+                        <td>Tipo de TV</td>
+                        <td>Smart TV Android</td>
+                    </tr>
+                    <tr>
+                        <td>Resolução</td>
+                        <td>Full HD</td>
+                    </tr>
+                    <tr>
+                        <td>Consumo (KW/h)</td>
+                        <td>&lt;0,5</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologia da Tela</td>
+                        <td>LED</td>
+                    </tr>
+                    <tr>
+                        <td>Polegadas</td>
+                        <td>40"</td>
+                    </tr>
+                    <tr>
+                        <td>Recursos de Áudio</td>
+                        <td>Dolby Audio</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi Integrado</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Cor</td>
+                        <td>Preto</td>
+                    </tr>
+                    <tr>
+                        <td>HDMI</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Local das entradas USB</td>
+                        <td>2 entradas traseiras</td>
+                    </tr>
 
-                <h2>Descrição do Produto</h2>
+                </tbody>
 
-                <table>
+            </table>
 
-                    <tbody>
-
-                        <tr>
-                            <td>Tipo de TV</td>
-                            <td>Smart TV Android</td>
-                        </tr>
-                        <tr>
-                            <td>Resolução</td>
-                            <td>Full HD</td>
-                        </tr>
-                        <tr>
-                            <td>Consumo (KW/h)</td>
-                            <td>&lt;0,5</td>
-                        </tr>
-                        <tr>
-                            <td>Tecnologia da Tela</td>
-                            <td>LED</td>
-                        </tr>
-                        <tr>
-                            <td>Polegadas</td>
-                            <td>40"</td>
-                        </tr>
-                        <tr>
-                            <td>Recursos de Áudio</td>
-                            <td>Dolby Audio</td>
-                        </tr>
-                        <tr>
-                            <td>Wi-Fi Integrado</td>
-                            <td>Sim</td>
-                        </tr>
-                        <tr>
-                            <td>Cor</td>
-                            <td>Preto</td>
-                        </tr>
-                        <tr>
-                            <td>HDMI</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Local das entradas USB</td>
-                            <td>2 entradas traseiras</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </section>
-
-        </article>
+        </section>
 
     </main>
 
