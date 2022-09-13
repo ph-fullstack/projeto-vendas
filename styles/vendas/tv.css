@@ -89,12 +89,11 @@ nav li:not(:last-child)::after {
 .produto img {
     display: block;
     margin: auto;
-    max-height: 300px;
-    max-width: 500px;
+    height: 200px;
 }
 
 .produto h2 {
-    margin-top: 5px;
+    margin-top: 7.5px;
     text-align: justify;
     font-size: 24px;
     color: #0145AC;
