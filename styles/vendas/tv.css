@@ -89,7 +89,8 @@ nav li:not(:last-child)::after {
 .produto img {
     display: block;
     margin: auto;
-    height: 300px;
+    max-height: 300px;
+    max-width: 500px;
 }
 
 .produto h2 {
