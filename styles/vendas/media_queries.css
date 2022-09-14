@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+
+--------------------------------
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+:root {
+    --base: #475979;
+    --verde: #82C7A5;
+    --azul: #0145AC;
+    --fonte-valores: 'Kanit', Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Secular One', 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 767.9px) {
+    nav {
+        padding: 15px;
+    }
+
+    .produto img {
+        height: 300px;
+    }
+
+    .produto h2 {
+        margin-top: 10px;
+        font-size: 26px;
+    }
+
+    .produto span {
+        font-size: 2em;
+    }
+
+    .pagamento {
+        padding: 15px;
+    }
+
+    .dados {
+        width: 650px;
+        height: 35px;
+        font-size: 1.25em;
+        text-indent: 12px;
+    }
+
+    .enviar {
+        width: 260px;
+    }
+
+    .limpar {
+        width: 110px;
+    }
+
+    .enviar, .limpar {
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    .detalhes {
+        padding: 40px 15px;
+    }
+
+}
+
+@media screen and (min-width:991.9px) {
+    main {
+        width: clamp(900px, 80%, 1050px);
+        margin: auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-template-rows: 40px 450px 300px;
+        gap: 15px 6%;
+        margin-bottom: 30px;
+    }
+
+    .produto, .pagamento, .detalhes {
+        border-radius: 15px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .produto {
+        width: 100%;
+        position: relative;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .produto img {
+        height: 250px;
+    }
+
+    .produto span {
+        display: block;
+        position: absolute;
+        width: 260px;
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 2.3em;
+    }
+
+    .pagamento {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .detalhes {
+        width: 100%;
+        padding: 15px 10px;
+        position: relative;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .detalhes h2 {
+        margin-bottom: 15px;
+    }
+
+    .detalhes table {
+        margin: auto;
+    }
+}
