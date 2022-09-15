@@ -28,7 +28,7 @@
 
                 <li><a href="../../index.html">Tecnologia</a></li>
 
-                <li>TV</li>
+                <li>Tablet</li>
 
             </ul>
 
@@ -63,15 +63,18 @@
                 </p>
 
                 <p>
-                    <label for="cartao">
-                        <input type="number" name="cartao" id="cartao" placeholder="N° do Cartão de Crédito* (Somente números)" class="dados" required>
+                    <label for="email">
+                        <input type="text" name="email" id="email" placeholder="E-mail*" class="dados" required>
                     </label>
                 </p>
 
                 <p>
-                    <label for="email">
-                        <input type="text" name="email" id="email" placeholder="E-mail*" class="dados" required>
-                    </label>
+                    <select name="pagamento" id="pagamento" class="dados">
+                        <option value="" selected>Escolha uma forma de pagamento</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="pix">Pix</option>
+                    </select>
                 </p>
 
                 <p>

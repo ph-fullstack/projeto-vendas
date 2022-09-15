@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moletom azul | V&T - Vendas & Trocas</title>
+    <title>Smart TV 40" LED Full HD - WiFi Bluetooth e HDR | V&T - Vendas & Trocas</title>
     <link rel="stylesheet" href="../../styles/vendas/style.css">
     <link rel="stylesheet" href="../../styles/vendas/media_queries.css">
     <meta name="description" content="Site desenvolvido por ph-fullstack para o trabalho dos alunos de 1°ano/ADM no IFPI campus Campo Maior. (Criado em 2022)">
@@ -18,17 +18,17 @@
 
     </header>
 
-    <main>
+    <main class="main-t">
 
         <nav>
 
             <ul class="breadchumb">
 
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../trocas.html">Trocas</a></li>
 
-                <li><a href="../../index.html">Moda</a></li>
+                <li><a href="../../trocas.html">Tecnologia</a></li>
 
-                <li>Moletom</li>
+                <li>TV</li>
 
             </ul>
 
@@ -36,11 +36,11 @@
 
         <section class="produto">
 
-            <img src="../../images/moletom.png" alt="Moletom Azul">
+            <img src="../../images/smart-tv.png" alt="Smart TV">
 
-            <h2>Moletom azul</h2>
+            <h2>Smart TV 40" LED Full HD - WiFi Bluetooth e HDR</h2>
 
-            <span>Por R$ 75,90</span>
+            <span>Por R$ 599,00</span>
 
         </section>
 
@@ -69,16 +69,16 @@
                 </p>
 
                 <p>
-                    <select name="pagamento" id="pagamento" class="dados">
-                        <option value="" selected>Escolha uma forma de pagamento</option>
-                        <option value="boleto">Boleto Bancário</option>
-                        <option value="cartao">Cartão de Crédito</option>
-                        <option value="pix">Pix</option>
-                    </select>
+                    <label for="foto" class="foto">Foto do produto: </label>
+                    <input type="file" name="foto" id="foto" class="foto" accept="image/*,.pdf" required>
                 </p>
 
                 <p>
-                    <input type="submit" value="Confirmar Compra" class="enviar">
+                    <textarea name="descricao" id="descricao" placeholder="Descrição do produto" class="descricao" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar Pedido" class="enviar">
                     <input type="reset" value="Limpar" class="limpar">
                     <script>
                         function msg(){
@@ -100,16 +100,48 @@
                 <tbody>
 
                     <tr>
-                        <td>Tamanho</td>
-                        <td>P, Gg, Exg, G, M</td>
+                        <td>Tipo de TV</td>
+                        <td>Smart TV Android</td>
+                    </tr>
+                    <tr>
+                        <td>Resolução</td>
+                        <td>Full HD</td>
+                    </tr>
+                    <tr>
+                        <td>Consumo (KW/h)</td>
+                        <td>&lt;0,5</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologia da Tela</td>
+                        <td>LED</td>
+                    </tr>
+                    <tr>
+                        <td>Polegadas</td>
+                        <td>40"</td>
+                    </tr>
+                    <tr>
+                        <td>Recursos de Áudio</td>
+                        <td>Dolby Audio</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi Integrado</td>
+                        <td>Sim</td>
                     </tr>
                     <tr>
                         <td>Cor</td>
-                        <td>Azul</td>
+                        <td>Preto</td>
                     </tr>
                     <tr>
-                        <td>Tipo</td>
-                        <td>Moletom fechado com capuz</td>
+                        <td>HDMI</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Local das entradas USB</td>
+                        <td>2 entradas traseiras</td>
+                    </tr>
+                    <tr>
+                        <td>Tempo de uso</td>
+                        <td>2 anos</td>
                     </tr>
 
                 </tbody>

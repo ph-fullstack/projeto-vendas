@@ -131,6 +131,28 @@ nav li:not(:last-child)::after {
     text-indent: 10px;
     width: clamp(250px, 100%, 500px);
     border-radius: 30px;
+    margin: 3px 0px;
+    border: 0.5px solid black;
+}
+
+.foto {
+    border: none;
+    font-size: clamp(1em, 2.2vw, 1.25em);
+}
+
+.foto:hover {
+    cursor: pointer;
+}
+
+.descricao {
+    position: relative;
+    resize: none;
+    width: clamp(250px, 85%, 500px);
+    height: 200px;
+    font-size: 1.125em;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 7.5px;
 }
 
 .enviar {
@@ -166,8 +188,7 @@ nav li:not(:last-child)::after {
 }
 
 .detalhes table td {
-    text-indent: 5px;
-    padding: 5px;
+    padding: 5px 10px;
     color: #555;
 }
 

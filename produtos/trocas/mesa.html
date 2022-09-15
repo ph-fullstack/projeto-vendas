@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moletom azul | V&T - Vendas & Trocas</title>
+    <title>Mesa de jantar | V&T - Vendas & Trocas</title>
     <link rel="stylesheet" href="../../styles/vendas/style.css">
     <link rel="stylesheet" href="../../styles/vendas/media_queries.css">
     <meta name="description" content="Site desenvolvido por ph-fullstack para o trabalho dos alunos de 1°ano/ADM no IFPI campus Campo Maior. (Criado em 2022)">
@@ -18,17 +18,17 @@
 
     </header>
 
-    <main>
+    <main class="main-t">
 
         <nav>
 
             <ul class="breadchumb">
 
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../trocas.html">Trocas</a></li>
 
-                <li><a href="../../index.html">Moda</a></li>
+                <li><a href="../../trocas.html">Móveis</a></li>
 
-                <li>Moletom</li>
+                <li>Mesa</li>
 
             </ul>
 
@@ -36,11 +36,11 @@
 
         <section class="produto">
 
-            <img src="../../images/moletom.png" alt="Moletom Azul">
+            <img src="../../images/mesa.png" alt="Mesa de Jantar">
 
-            <h2>Moletom azul</h2>
+            <h2>Mesa de jantar</h2>
 
-            <span>Por R$ 75,90</span>
+            <span>Por R$ 399,00</span>
 
         </section>
 
@@ -69,16 +69,16 @@
                 </p>
 
                 <p>
-                    <select name="pagamento" id="pagamento" class="dados">
-                        <option value="" selected>Escolha uma forma de pagamento</option>
-                        <option value="boleto">Boleto Bancário</option>
-                        <option value="cartao">Cartão de Crédito</option>
-                        <option value="pix">Pix</option>
-                    </select>
+                    <label for="foto" class="foto">Foto do produto: </label>
+                    <input type="file" name="foto" id="foto" class="foto" accept="image/*,.pdf" required>
                 </p>
 
                 <p>
-                    <input type="submit" value="Confirmar Compra" class="enviar">
+                    <textarea name="descricao" id="descricao" placeholder="Descrição do produto" class="descricao" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar Pedido" class="enviar">
                     <input type="reset" value="Limpar" class="limpar">
                     <script>
                         function msg(){
@@ -100,16 +100,28 @@
                 <tbody>
 
                     <tr>
-                        <td>Tamanho</td>
-                        <td>P, Gg, Exg, G, M</td>
+                        <td>Necessita de Montagem?</td>
+                        <td>Não</td>
                     </tr>
                     <tr>
-                        <td>Cor</td>
-                        <td>Azul</td>
+                        <td>Indicação de Uso</td>
+                        <td>Sala de Jantar</td>
                     </tr>
                     <tr>
-                        <td>Tipo</td>
-                        <td>Moletom fechado com capuz</td>
+                        <td>Revestimento/Acabamento</td>
+                        <td>Pintura uv</td>
+                    </tr>
+                    <tr>
+                        <td>Formato da Mesa</td>
+                        <td>Retangular</td>
+                    </tr>
+                    <tr>
+                        <td>Quantidade de Lugares</td>
+                        <td>6 Lugares</td>
+                    </tr>
+                    <tr>
+                        <td>Tempo de uso</td>
+                        <td>7 meses</td>
                     </tr>
 
                 </tbody>

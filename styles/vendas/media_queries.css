@@ -66,6 +66,12 @@ Grandes telas: acima de 1200px
         padding: 40px 15px;
     }
 
+    .descricao {
+        width: 600px;
+        height: 175px;
+        font-size: 1.25em
+    }
+
 }
 
 @media screen and (min-width:991.9px) {
@@ -146,5 +152,9 @@ Grandes telas: acima de 1200px
 
     .detalhes table {
         margin: auto;
+    }
+    
+    .main-t {
+        grid-template-rows: 40px 450px 500px;
     }
 }
